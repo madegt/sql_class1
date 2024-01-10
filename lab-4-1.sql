@@ -13,6 +13,7 @@
 -- from stats
 --- where player_id = 1678;
 
-Select sum(hits)
-from stats inner join stats.player_id on players.id
+Select sum(stats.hits)
+from stats 
+inner join players on stats.player_id = players.id
 where last_name="Bonds" and first_name="Barry";
