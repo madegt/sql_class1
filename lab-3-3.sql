@@ -4,7 +4,7 @@
 Select year, name, max(wins)
 from teams
 where year >= 1960
-group by name
+group by year
 order by max(wins) desc
 ;
 
