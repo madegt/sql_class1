@@ -14,4 +14,6 @@
 -- | 2020 | 30       |
 -- +------+----------+
 
-
+Select year, count(name)
+from teams
+group by year;
